@@ -1,0 +1,40 @@
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /backend
+      - /backend/node_modules # Exclude node_modules from being overwritten
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./frontend
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /frontend
+      - /frontend/node_modules # Exclude node_modules from being overwritten
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: huydukenguyen
+      MONGO_INITDB_ROOT_PASSWORD: u923bmS996yzo50g
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
