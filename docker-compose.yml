@@ -1,29 +1,39 @@
+networks:
+  app-network:
+    driver: bridge
+
 services:
   backend:
+    networks:
+      - app-network
     build: ./backend
     volumes:
-      - type: bind
-        source: ./backend
-        target: /backend
-      - /backend/node_modules # Exclude node_modules from being overwritten
+      - ./backend:/app
+      - /app/node_modules
     ports:
       - "5000:5000"
     env_file:
       - ./backend/.env
     depends_on:
       - mongodb
+    working_dir: /app
+    command: npm run start
 
   frontend:
+    networks:
+      - app-network
     build: ./frontend
     volumes:
-      - type: bind
-        source: ./frontend
-        target: /frontend
-      - /frontend/node_modules # Exclude node_modules from being overwritten
+      - ./frontend:/app
+      - /app/node_modules
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=development
+      - WDS_SOCKET_PORT=0
+      - PUBLIC_URL=http://localhost:3000
+    working_dir: /app
+    command: npm start
 
   mongodb:
     image: mongo:latest

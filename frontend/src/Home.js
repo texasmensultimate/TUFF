@@ -23,7 +23,7 @@ const Home = () => {
               The University of Texas at Austin<br/>Men's Club Ultimate
             </h1>
           </div>
-          <Card title="Texas TUF" className="w-full max-w-lg mt-8 md:mt-0">
+          <Card title="Texas TUFF" className="w-full max-w-lg mt-8 md:mt-0">
             <p>We are a sports team dedicated to excellence.</p>
           </Card>
         </div>
