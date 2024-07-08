@@ -4,39 +4,48 @@ TUFF
 │  ├─ .dockerignore
 │  ├─ .env
 │  ├─ dockerfile
-│  ├─ models
-│  │  └─ yourModel.js
 │  ├─ package-lock.json
 │  ├─ package.json
 │  ├─ requirements.txt
-│  ├─ routes
-│  │  └─ yourRoutes.js
-│  ├─ scrape_usau.py
-│  └─ server.js
+│  └─ src
+│     ├─ models
+│     │  └─ yourModel.js
+│     ├─ routes
+│     │  └─ yourRoutes.js
+│     ├─ scrape_usau.py
+│     └─ server.js
 ├─ docker-compose.yml
-└─ frontend
-   ├─ .dockerignore
-   ├─ .gitignore
-   ├─ dockerfile
-   ├─ package-lock.json
-   ├─ package.json
-   ├─ public
-   │  ├─ Highlights.mp4
-   │  ├─ index.html
-   │  ├─ Longhorn.PNG
-   │  ├─ Texas Ultimate.jpeg
-   │  ├─ TUFF.jpg
-   │  └─ TUFF.png
-   ├─ README.md
-   ├─ src
-   │  ├─ App.css
-   │  ├─ App.js
-   │  ├─ components
-   │  │  ├─ Card.js
-   │  │  └─ NavBar.js
-   │  ├─ Home.js
-   │  ├─ index.css
-   │  ├─ index.js
-   │  ├─ reportWebVitals.js
-   │  └─ setupProxy.js
-   └─ tailwind.config.js
+├─ frontend
+│  ├─ .dockerignore
+│  ├─ .gitignore
+│  ├─ dockerfile
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ README.md
+│  ├─ src
+│  │  ├─ App.js
+│  │  ├─ assets
+│  │  │  ├─ public
+│  │  │  │  ├─ Highlights.mp4
+│  │  │  │  ├─ Home.jpg
+│  │  │  │  ├─ index.html
+│  │  │  │  ├─ Longhorn.png
+│  │  │  │  ├─ Texas Ultimate.jpeg
+│  │  │  │  ├─ TUFF.jpg
+│  │  │  │  └─ TUFF.png
+│  │  │  └─ styles
+│  │  │     ├─ App.css
+│  │  │     └─ index.css
+│  │  ├─ components
+│  │  │  ├─ Card.js
+│  │  │  ├─ NavBar.js
+│  │  │  └─ NavBarButton.js
+│  │  ├─ index.js
+│  │  ├─ pages
+│  │  │  └─ Home.js
+│  │  ├─ reportWebVitals.js
+│  │  └─ setupProxy.js
+│  └─ tailwind.config.js
+├─ package-lock.json
+├─ package.json
+└─ project-hierarchy.txt

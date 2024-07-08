@@ -5,10 +5,13 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          orange: {
-            600: '#BF5700', // Burnt orange
-            800: '#8C3D00', // Darker burnt orange for hover
-          },
+          'burnt-orange': '#BF5700',
+          'darker-burnt-orange': '#8C3D00',
+          'light-burnt-orange': '#D86A1E',
+          'lighter-burnt-orange': '#FFA07A',
+        },
+        fontFamily: {
+          'anton': ['Anton SC', 'sans-serif'],
         },
       },
     },
