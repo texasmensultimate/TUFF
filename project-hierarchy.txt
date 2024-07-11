@@ -12,8 +12,11 @@ TUFF
 │     │  └─ yourModel.js
 │     ├─ routes
 │     │  └─ yourRoutes.js
-│     ├─ scrape_usau.py
-│     └─ server.js
+│     ├─ server.js
+│     ├─ usau_modules.py
+│     ├─ usau_script.py
+│     └─ __pycache__
+│        └─ usau_modules.cpython-310.pyc
 ├─ docker-compose.yml
 ├─ frontend
 │  ├─ .dockerignore
@@ -21,23 +24,25 @@ TUFF
 │  ├─ dockerfile
 │  ├─ package-lock.json
 │  ├─ package.json
+│  ├─ public
+│  │  ├─ Highlights.mp4
+│  │  ├─ Home.jpg
+│  │  ├─ index.html
+│  │  ├─ Longhorn.png
+│  │  ├─ Texas Ultimate.jpeg
+│  │  ├─ TUFF.jpg
+│  │  └─ TUFF.png
 │  ├─ README.md
 │  ├─ src
 │  │  ├─ App.js
 │  │  ├─ assets
-│  │  │  ├─ public
-│  │  │  │  ├─ Highlights.mp4
-│  │  │  │  ├─ Home.jpg
-│  │  │  │  ├─ index.html
-│  │  │  │  ├─ Longhorn.png
-│  │  │  │  ├─ Texas Ultimate.jpeg
-│  │  │  │  ├─ TUFF.jpg
-│  │  │  │  └─ TUFF.png
 │  │  │  └─ styles
 │  │  │     ├─ App.css
 │  │  │     └─ index.css
 │  │  ├─ components
 │  │  │  ├─ Card.js
+│  │  │  ├─ InstagramEmbed.js
+│  │  │  ├─ LatestTournament.js
 │  │  │  ├─ NavBar.js
 │  │  │  └─ NavBarButton.js
 │  │  ├─ index.js

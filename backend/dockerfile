@@ -27,5 +27,8 @@ COPY . .
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
+# Print the contents of the /app directory for debugging
+RUN ls -R /app
+
 # Run the application in development mode
 CMD ["npm", "run", "dev"]

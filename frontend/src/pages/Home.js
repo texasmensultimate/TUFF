@@ -1,6 +1,8 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import Card from '../components/Card';
+import LatestTournament from '../components/LatestTournament';
+import InstagramEmbed from '../components/InstagramEmbed';
 
 const Home = () => {
   return (
@@ -23,21 +25,20 @@ const Home = () => {
       <main className="relative container mx-auto p-8 flex flex-col items-center mt-16 space-y-12">
         <div className="flex flex-col md:flex-row md:items-center w-full md:space-x-12">
           <div className="flex flex-col items-center md:items-start md:w-1/2">
-            <img src="/TUFF.png" alt="Team Logo" className="h-48 mb-8 hover:scale-105 transition-transform duration-300" />
-            <Card title="We are Texas TUFF" className="w-full bg-black text-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-600">
+            <img src="/TUFF.png" alt="Team Logo" className="h-48 mb-8" />
+            <Card title="We are Texas TUFF" className="w-full bg-black text-gray-100 shadow-xl border border-gray-600">
               <p className="text-lg">Welcome! We are the University of Texas at Austin's Men's Ultimate Frisbee club team, competing in the South Central region of USA Ultimate's College Series.<br/><br/>Our program has been one of the most consistent nationals-caliber teams with 28 nationals appearances. We have our A and B teams, TUFF and Graze, catered to different levels of experience and commitment.</p>
             </Card>
           </div>
-          <Card title="Season Record" className="w-full md:w-1/2 text-center bg-black text-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-600">
-            <p className="text-4xl font-bold text-burnt-orange">10 Wins - 2 Losses</p>
-            <p className="mt-4 text-lg">Join us in our journey to the top!</p>
-          </Card>
+          <LatestTournament />
         </div>
 
-        <Card title="Tryouts/Interest" className="w-full max-w-2xl text-center bg-black text-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-600">
+        <Card title="Tryouts/Interest" className="w-full max-w-2xl text-center bg-black text-gray-100 shadow-xl border border-gray-600">
           <p className="text-xl mb-6">Ready to be part of something extraordinary? Want to ask us questions?</p>
           <a href="/interest" className="inline-block px-8 py-3 bg-burnt-orange text-white text-lg font-semibold rounded-lg shadow-md hover:bg-darker-burnt-orange transition-colors duration-300">Learn More</a>
         </Card>
+        
+        <InstagramEmbed />
       </main>
 
       <footer className="w-full bg-gray-800 shadow-inner mt-16 py-8">

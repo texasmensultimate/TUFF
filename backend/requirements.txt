@@ -1,1 +1,3 @@
-usau-scraper
+requests
+beautifulsoup4
+lxml
