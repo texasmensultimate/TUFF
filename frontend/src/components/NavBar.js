@@ -4,7 +4,7 @@ import NavBarButton from './NavBarButton';
 
 const NavBar = () => {
     return (
-        <nav className="w-full bg-black border-t-4 border-b-4 border-lighter-burnt-orange shadow relative z-10">
+        <nav className="w-full bg-dark-card shadow relative z-10">
             <div className="container mx-auto flex items-center justify-between px-4 py-0">
                 {/* Left side of the Navbar */}
                 <NavBarButton to="/about">About</NavBarButton>
@@ -15,7 +15,7 @@ const NavBar = () => {
                 {/* Center Logo as a button */}
                 <Link to="/" className="mx-5 relative z-50 flex justify-center items-center">
                     <div className="relative" style={{ width: '180px', height: '180px', marginTop: '-40px', marginBottom: '-40px' }}>
-                        <div className="absolute inset-0 rounded-full shadow-lg bg-black border-4 border-lighter-burnt-orange"></div>
+                        <div className="absolute inset-0 rounded-full shadow-lg bg-dark-bg"></div>
                         <div className="absolute inset-2 rounded-full overflow-hidden flex items-center justify-center">
                             <img
                                 src="/Longhorn.png"
