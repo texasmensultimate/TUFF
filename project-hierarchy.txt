@@ -1,5 +1,6 @@
 TUFF
 ├─ .gitattributes
+├─ .gitignore
 ├─ backend
 │  ├─ .dockerignore
 │  ├─ .env
@@ -14,13 +15,12 @@ TUFF
 │     │  └─ yourRoutes.js
 │     ├─ server.js
 │     ├─ usau_modules.py
-│     ├─ usau_script.py
-│     └─ __pycache__
-│        └─ usau_modules.cpython-310.pyc
+│     └─ usau_script.py
+├─ concat.py
+├─ concat.txt
 ├─ docker-compose.yml
 ├─ frontend
 │  ├─ .dockerignore
-│  ├─ .gitignore
 │  ├─ dockerfile
 │  ├─ package-lock.json
 │  ├─ package.json
@@ -28,11 +28,10 @@ TUFF
 │  │  ├─ Highlights.mp4
 │  │  ├─ Home.jpg
 │  │  ├─ index.html
-│  │  ├─ Longhorn.png
+│  │  ├─ Longhorn.PNG
 │  │  ├─ Texas Ultimate.jpeg
 │  │  ├─ TUFF.jpg
 │  │  └─ TUFF.png
-│  ├─ README.md
 │  ├─ src
 │  │  ├─ App.js
 │  │  ├─ assets
@@ -51,6 +50,4 @@ TUFF
 │  │  ├─ reportWebVitals.js
 │  │  └─ setupProxy.js
 │  └─ tailwind.config.js
-├─ package-lock.json
-├─ package.json
 └─ project-hierarchy.txt
