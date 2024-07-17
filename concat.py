@@ -10,7 +10,7 @@ OUTPUT_FILE = "concat.txt"
 HIERARCHY_FILE = "project-hierarchy.txt"
 include_extensions = ['.js', '.json', '.py', '.env', '.yml', '.css', '.html', '.md']
 exclude_extensions = [".mp4", ".jpg", ".jpeg", ".png"]
-exclude_files = ["concat.txt", "concat.py", HIERARCHY_FILE]
+exclude_files = ["concat.txt", "concat.py", HIERARCHY_FILE, 'package-lock.json']
 exclude_dirs = ["node_modules", "__pycache__", ".git"]
 
 def find_hierarchy_file(root):
