@@ -32,9 +32,11 @@ const LatestTournament = () => {
   if (!schedule) {
     return <div>Loading...</div>;
   }
+  
 
   return (
-    <div className="bg-dark-card p-4 md:p-8 rounded-3xl shadow-md text-light-text w-full">
+    <div className="bg-dark-card p-4 md:p-8 rounded-3xl shadow-md text-light-text w-full h-full flex flex-col">
+
       <h2 className="text-2xl md:text-3xl font-semibold mb-4">
         <a 
           href={schedule?.link} 
@@ -45,8 +47,8 @@ const LatestTournament = () => {
           {schedule?.tournament}
         </a>
       </h2>
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse">
+      <div className="overflow-x-auto flex-grow">
+        <table className="w-full border-collapse h-full">
           <thead>
             <tr>
               <th className="border-b-2 border-secondary-text p-2 text-left">Date</th>

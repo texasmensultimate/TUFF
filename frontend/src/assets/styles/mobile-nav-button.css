@@ -1,0 +1,7 @@
+/* Increase the padding for mobile menu buttons */
+@media (max-width: 809px) {
+    .mobile-nav-button {
+      padding: .5rem .5rem; /* Adjust these values to make the buttons bigger */
+    }
+  }
+  

@@ -23,15 +23,16 @@ const Home = () => {
 
             <NavBar />
 
-            <main className="container mx-auto p-4 md:p-8 flex flex-col items-center mt-8 space-y-8">
-                <div className="flex flex-col md:flex-row md:items-start w-full md:space-x-8 space-y-8 md:space-y-0">
-                    <div className="flex flex-col items-center md:items-start md:w-1/2">
+            <main className="container mx-auto p-4 md:p-8 flex flex-col items-stretch mt-8 space-y-8 min-h-screen ipad:max-w-none ipad:w-11/12">
+
+                <div className="flex flex-col ipad:flex-row ipad:items-stretch w-full ipad:space-x-8 space-y-8 ipad:space-y-0 flex-grow">
+                    <div className="flex flex-col items-center ipad:items-start ipad:w-1/2 flex-grow">
                         <img src="/TUFF.png" alt="Team Logo" className="h-24 md:h-32 mb-6" />
                         <Card title="We are Texas TUFF" className="w-full text-light-text shadow-lg">
                             <p className="text-base">Welcome! We are the University of Texas at Austin's Men's Ultimate Frisbee club team, competing in the South Central region of USA Ultimate's College Series.<br /><br />Our program has been one of the most consistent nationals-caliber teams with 28 nationals appearances. We have our A and B teams, TUFF and Graze, catered to different levels of experience and commitment.</p>
                         </Card>
                     </div>
-                    <div className="md:w-1/2">
+                    <div className="ipad:w-1/2 flex-grow">
                         <LatestTournament />
                     </div>
                 </div>
@@ -40,7 +41,9 @@ const Home = () => {
                     <p className="text-lg mb-4">Ready to be part of something extraordinary? Want to ask us questions?</p>
                     <a href="/interest" className="inline-block px-6 py-2 bg-burnt-orange text-white font-semibold rounded-lg shadow-md hover:bg-darker-burnt-orange transition-colors duration-300">Learn More</a>
                 </Card>
-                <InstagramEmbed />
+                <div className="w-full max-w-2xl">
+                    <InstagramEmbed />
+                </div>
             </main>
 
             <footer className="w-full bg-dark-card shadow-inner mt-8 py-6">

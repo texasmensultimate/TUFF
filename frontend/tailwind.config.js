@@ -15,7 +15,10 @@ module.exports = {
                 'secondary-text': '#a0a0a0'
             },
             fontFamily: {
-                'anton': ['Anton SC', 'sans-serif'],
+                'anton': ['Anton', 'sans-serif'],
+            },
+            screens: {
+                'ipad': '810px',
             },
         },
     },
